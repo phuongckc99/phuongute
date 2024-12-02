@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web App</title>
+    <meta charset="UTF-8"> 
+    <meta name="description" content="Free Web tutorials"> 
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css"> 
+  </head>  
+  <body>
+    
+    <section class="tentruong">  
+      <div class="boder1" style="display: flex; align-items: center; padding: 10px;">  
+          <div class="logotruong" style="margin-right: 20px;">  
+              <img id="logo" src="./img/LOGOTRUONG.png" alt="Logo Trường" style="max-height: 80px; width: auto;">  
+          </div>  
+          <div class="title">  
+              <h1 style="font-size: 20px; color: white;  margin: 0;">TRƯỜNG ĐẠI HỌC</h1>  
+              <h2 style="font-size: 36px; color: white; font-weight: bold; margin: 5px 0;">SƯ PHẠM KỸ THUẬT TP.HỒ CHÍ MINH</h2>  
+              <p style="font-size: 29.6px; margin: 5px 0; color: black;">HCMC University of Technology and Education</p>  
+          </div>   
+      </div>  
+  </section>      <br>
+  <div class="boder10" style="display: flex; justify-content: space-between; align-items: center; padding: 5px;">  
+    <div class="tendoan" style="text-align: center; height: 300px; width: 1000px;">  
+        <h1 style="font-size: 36px; color: black; margin: 0;font-weight: bold;">ĐỒ ÁN 2</h1>  
+        <h2 style="font-size: 40px; color: black; font-weight: bold; margin: 5px 0;">  
+            THIẾT KẾ THI CÔNG THIẾT BỊ ĐO NHỊP TIM, NỒNG ĐỘ OXY MÁU VÀ ĐO NHIỆT ĐỘ KHÔNG TIẾP XÚC  
+        </h2>  
+    </div>  
+    <div class="tendoan" style="text-align: center; height: 300px; width: 1000px;">  
+        <h1 style="font-size: 36px; color: black; margin: 0;font-weight: bold;">GVHD: VỠ ĐỨC DŨNG</h1>  
+        <h2 style="font-size: 50px; color: black; margin: 5px 0;">  
+            -------------------------------------- 
+        </h2>  
+        <p style="font-size: 36px; margin: 5px 0; color: black;font-weight: bold;">SVTH: Phạm Quí Phương <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phạm Khánh An</p>  
+    </div>  
+</div>  
+    <br>
+    <div class="ten">
+      <div class="ten-temp">
+        <p style="font-size: 30px;">NHIỆT ĐỘ ĐỘ ẨM PHÒNG</p>  
+      </div>
+  </div>
+    <div class="devices">
+      <div class="dev1">
+          <img id="light_01" src="./img/nhietdo.png">      
+        <div class="data-box1">  
+          <h1 style="font-size: 20px;font-weight: bold;">Nhiệt độ phòng <br> <span style="color: blue;" id="TempC">  32 </span> &deg;C</h1>	 
+        </div> 
+    </div>
+      <div class="dev1">
+          <img id="light_02" src="./img/doam.png">
+          <div class="data-box1">  
+            <h1 style="font-size: 20px;font-weight: bold;"> Độ ẩm phòng <br> <span style="color: blue;" id="TempF"> 81.5 </span> &#37;</h1>	 
+          </div>
+      </div>
+    </div> <br>
+    <div class="ten1">
+      <div class="ten-nhiptim">
+        <p style="font-size: 30px;font-weight: bold;">NHỊP TIM, NỒNG ĐỘ OXY MÁU & NHIỆT ĐỘ THÂN NHIỆT</p>  
+      </div>
+    </div>
+    <div class="devices1">
+      
+
+    
+      <div class="dev2">
+          <img id="light_05" src="./img/tempc.png">      
+        <div class="data-box3">  
+          <h1 style="font-size: 20px;font-weight: bold;">Nhiệt độ - Độ C <br> <span style="color: blue;" id="OBTempC">  65 </span> &deg;C </h1>	 
+        </div> 
+    </div>
+      <div class="dev2">
+          <img id="light_06" src="./img/tempf.png">
+          <div class="data-box3">  
+            <h1 style="font-size: 20px; font-weight: bold;">Nhiệt độ - Độ F <br> <span style="color: blue;" id="OBTempF">  110 </span> &deg;F</h1>	 
+          </div>
+      </div> 
+    </div>
+
+    <section class="hero is-primary is-bold is-center">
+      <div class="hero-body container"  style="text-align: center; height:60px; padding: 5px;">        
+          <span style="font-size: 30px; color: #ffffff; font-weight: bold;">Form Lưu Trữ Dữ Liệu Trên Google Sheet</span>	
+      </div>
+    </section>
+    <br>
+      
+	<div style="height: 10px"></div>
+	<div class="container" style="border: solid 2px #00a779; border-radius: 10px" > 
+
+		<form id="form" class="container m-4 pl-4" method="POST">
+      <section class="hero is-primary is-bold is-center">
+        <div class="hero-body container"  style="text-align: center; height:40px; padding: 5px;">        
+            <span style="font-size: 20px; color: #ffffff; font-weight: bold;">Thông Tin Cá Nhân</span>		
+        </div>
+      </section>
+      <div id="notification" class="notification"></div>  
+      <div class="field">  
+        <label class="label">Chọn thông tin</label>  
+        <div class="control">  
+            <select id="info-select" onchange="populateFields()">  
+                <option value="">Chọn thông tin</option>  
+                <option value="PHẠM QUÍ PHƯƠNG,1999-08-08,Nam">PHẠM QUÍ PHƯƠNG</option>  
+                <option value="PHẠM KHÁNH AN,2000-05-15,Nam">PHẠM KHÁNH AN</option>  
+            </select>  
+        </div>  
+    </div>  
+    <div class="field">  
+        <label class="label">Thêm thông tin mới</label>  
+        <div class="control">  
+            <input type="text" id="new-name" placeholder="Tên" />  
+            <input type="date" id="new-dob" placeholder="Ngày sinh" />  
+            <select id="new-gender">  
+                <option value="Nam">Nam</option>  
+                <option value="Nữ">Nữ</option>  
+            </select>  
+            <button id="add-button">Add thông tin mới</button> <!-- Không sử dụng onclick -->   
+        </div>  
+    </div>  
+    <div class="field">  
+        <label class="label">Họ và tên</label>  
+        <div class="control">  
+            <input  
+                class="input"  
+                type="text"  
+                placeholder="Nhập họ và tên"  
+                name="Full Name"  
+                id="full-name"  
+                value="PHẠM QUÍ PHƯƠNG"  
+            />  
+        </div>  
+    </div>  
+    
+    <div class="field">  
+        <label class="label">Ngày tháng năm sinh</label>  
+        <div class="control">  
+            <input  
+                class="input"  
+                type="date"  
+                placeholder="Ngày tháng năm sinh"  
+                name="Date of Birthday"  
+                id="date-of-birthday"  
+                value="1999-08-08"  
+            />  
+        </div>  
+    </div>  
+    
+    <div class="field">  
+        <label class="label">Giới tính</label>  
+        <div class="control">  
+            <select name="Gender" id="gender-select">  
+                <option value="Nam" selected>Nam</option>  
+                <option value="Nữ">Nữ</option>  
+            </select>  
+        </div>  
+    </div>  
+
+    <script>  
+        // Hàm để khôi phục dữ liệu từ localStorage  
+        function loadInfo() {  
+            const storedInfo = JSON.parse(localStorage.getItem('infoList')) || [];  
+            const infoSelect = document.getElementById('info-select');  
+
+            // Thêm thông tin đã lưu vào select  
+            storedInfo.forEach(info => {  
+                const newOption = document.createElement('option');  
+                newOption.value = `${info.name},${info.dob},${info.gender}`;  
+                newOption.textContent = info.name;  
+                infoSelect.appendChild(newOption);  
+            });  
+        }  
+
+        function populateFields() {  
+            const infoSelect = document.getElementById('info-select');  
+            const selectedValue = infoSelect.value;  
+            if (selectedValue) {  
+                const [name, dob, gender] = selectedValue.split(',');  
+                document.getElementById('full-name').value = name;  
+                document.getElementById('date-of-birthday').value = dob;  
+                document.getElementById('gender-select').value = gender;  
+            } else {  
+                document.getElementById('full-name').value = '';  
+                document.getElementById('date-of-birthday').value = '';  
+                document.getElementById('gender-select').value = 'Nam'; // Giá trị mặc định  
+            }  
+        }  
+
+        function showNotification(message, type) {  
+            const notification = document.getElementById('notification');  
+            notification.textContent = message;  
+            notification.className = `notification ${type}`; // Thêm lớp tương ứng  
+            notification.style.display = 'block'; // Hiển thị thông báo  
+
+            setTimeout(() => {  
+                notification.style.display = 'none'; // Ẩn thông báo sau 2 giây  
+            }, 3000);  
+        }  
+        
+        function addNewInfo() {  
+          event.preventDefault(); // Ngăn chặn hành động mặc định của nút submit  
+            const newName = document.getElementById('new-name').value.trim();  
+            const newDob = document.getElementById('new-dob').value;  
+            const newGender = document.getElementById('new-gender').value;  
+
+            if (newName && newDob && (newGender === 'Nam' || newGender === 'Nữ')) {  
+                const infoSelect = document.getElementById('info-select');  
+                const newOption = document.createElement('option');  
+                newOption.value = `${newName},${newDob},${newGender}`;  
+                newOption.textContent = newName;  
+                infoSelect.appendChild(newOption); // Thêm vào select  
+
+                // Lưu thông tin mới vào localStorage  
+                const storedInfo = JSON.parse(localStorage.getItem('infoList')) || [];  
+                storedInfo.push({ name: newName, dob: newDob, gender: newGender });  
+                localStorage.setItem('infoList', JSON.stringify(storedInfo));  
+
+                // Xóa các ô nhập  
+                document.getElementById('new-name').value = '';  
+                document.getElementById('new-dob').value = '';  
+                document.getElementById('new-gender').value = 'Nam'; // Đặt lại về mặc định  
+
+                showNotification("Thêm thông tin thành công!", "success"); // Hiển thị thông báo thành công  
+                } else {  
+                  showNotification("Error!!! Vui lòng nhập đầy đủ thông tin (Tên, Ngày sinh, Giới tính)!", "error"); // Hiển thị thông báo lỗi
+                }  
+        }  
+        // Thêm sự kiện cho nút "Add thông tin mới"  
+        document.getElementById('add-button').addEventListener('click', addNewInfo);  
+        // Gọi loadInfo khi trang được tải  
+        //window.onload = loadInfo;  
+    </script>  
+    
+    
+      <div class="field">  
+        <label class="label">Ngày khám</label>  
+        <div class="control">  
+          <input  
+            class="input"  
+            type="date"  
+            placeholder="Ngày khám"  
+            name="EXAMINATION DAY"    
+            id="examination-day"  
+          />  
+        </div>  
+      </div>  
+
+    <div class="devi456"> <!-- Thẻ này sẽ chỉ chứa tiêu đề và khung -->   
+        
+      <div class="frame">  
+        <div class="title">ECG Animation</div>  
+        <div class="container9">  
+          <div class="heart"></div>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+          <div class="heart-rate">  
+            <h1 style="font-size: 50px;font-weight: bold;"> Heart <br> Rate  </span></h1>	 
+          </div>
+      </div>  
+      <div class="content">  
+        <!-- Khung cho dạng sóng SVG -->  
+    <div class="wave-container" style="border: 2px solid #f1b308; padding: 5px; border-radius: 10px; margin-bottom: 0px; width: 800px;height: 200px; display: flex; justify-content: center; align-items: center;">  
+      <svg width="900" height="100" viewBox="0 0 900 100">
+        <!-- Sóng di chuyển -->
+        <path id="B" xmlns="http://www.w3.org/2000/svg" stroke="#f1b308" stroke-width="3" stroke-dasharray="1780" stroke-dashoffset="1780" fill="none"
+        d="M0,80 20,80 40,60 60,80 80,80 100,100 120,0 140,100 160,80 180,80 200,50 220,80 260,80 280,80 300,60 320,80 340,80 360,
+        100 380,0 400,100 420,80 440,80 460,50 480,80 520,80 540,80 560,60 580,80 600,80 620,100 640,0 660,100 680,80 700,80 720,
+        50 740,80 760,80 780,80 800,60 820,80 840,80 860,100 880,0 900,100 920,80 940,80 960,50 980,80 1020,80 1040,80 1060,60 1080,
+        80 1100,80 1120,100 1140,0 1160,100 1180,80 1200,80 1220,50 1240,80 1280,80 1300,80 1320,60 1340,80 1360,80 1380,100 1400,0 1420,
+        100 1440,80 1460,80 1480,50 1500,80">
+            <!-- Hoạt ảnh vẽ sóng -->
+            <animate id="dashAnimate" attributeName="stroke-dashoffset" from="1780" to="0" dur="15s" repeatCount="indefinite"/>
+            <!-- Thay đổi màu sắc khi di chuyển chuột -->
+            <animate attributeType="XML" attributeName="stroke" begin="mousemove" from="#AAA" to="#32CD32" dur="1s" fill="freeze"/>
+        </path>
+    
+        <!-- Đường thẳng đi kèm -->
+        <path stroke="#222" stroke-width="3" stroke-dasharray="480" stroke-dashoffset="480" d="M10,100 490,100">
+            <!-- Hoạt ảnh đường thẳng -->
+            <animate id="lineAnimate" attributeName="stroke-dashoffset" from="480" to="0" dur="10s" repeatCount="indefinite" fill="freeze"/>
+        </path>
+    </svg>
+  </div>  
+          <div class="monitor">  
+            <div class="data">  
+                <div class="label1">PR <br> Bpm <br> <span class="heart-icon">❤️</span></div>  
+                <div class="heart-rate1">
+                  <h1 style="font-size: 50px;font-weight: bold;"> <span style="color: #f1b308;" id="BPW">  110   </span></h1>	 
+                </div>  
+            </div>   
+        </div>  
+      </div>
+      <div class="content">
+    <canvas id="ecgCanvas" width="800" height="200"></canvas>
+    <script>
+        const canvas = document.getElementById('ecgCanvas');
+        const ctx = canvas.getContext('2d');
+        let offset = 0; // X offset để tạo hiệu ứng sóng di chuyển
+        let drawSOP2WaveId; 
+        
+
+        const drawSOP2Wave = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Xóa canvas
+            ctx.fillStyle = '#222';
+            ctx.fillRect(0, 0, canvas.width, canvas.height); // Vẽ lại nền
+
+            ctx.strokeStyle = '#00FFFF';
+            ctx.lineWidth = 2;
+
+            ctx.beginPath();
+            const height = canvas.height;
+            const baseY = height / 2;
+
+            ctx.moveTo(0, baseY);
+
+            // Vẽ dạng sóng SOP2
+            for (let x = 0; x < canvas.width; x++) {
+                const y = baseY + 50 * Math.sin(0.1 * (x + offset)) * Math.cos(0.028 * (x + offset));
+                ctx.lineTo(x, y);
+            }
+
+            ctx.stroke();
+            offset += 0.5; // Tăng offset để sóng di chuyển
+            drawSOP2WaveId = requestAnimationFrame(drawSOP2Wave);  // Gọi lại hàm để tạo hiệu ứng
+        };
+        
+    </script>
+        <div class="monitor1">  
+          <div class="data">  
+              <div class="label2"> SpO2 <br> <span class="heart-icon"> % </span></div>  
+              <div class="heart-rate1">
+                <h1 style="font-size: 50px;font-weight: bold;"> <span style="color:#00FFFF;" id="SPO2">  95   </span></h1>	 
+              </div>  
+          </div>   
+      </div>    
+    </div>
+        </div>  
+        <div class="LienketGG"  style="font-size: 30px; text-align: center; height:50px; padding: 5px;">      
+          <a style="text-decoration: underline; " href="https://docs.google.com/spreadsheets/d/1p6gzusx_NDPYgkCKgnqBK2CNnKR1xJvm940sueNbP18/edit?gid=0#gid=0" 
+          target="_blank">Lịch sử đo Bpm & SpO2</a>
+        </div>
+      </div>    
+  </div>  
+    <br>
+    
+
+<div class="field" style="visibility: hidden;">  
+    <label class="label">Nhịp Tim</label>  
+    <div class="control">  
+        <input  
+            id="heartRateInput" 
+            class="input"  
+            type="text"  
+            placeholder="Nhịp tim"  
+            name="BPW"  
+        />  
+    </div>  
+</div>  
+<div id="averageBPM" style="visibility: hidden;"></div> <!-- Hiển thị giá trị trung bình -->  
+<ul id="BPMList" style="visibility: hidden;"></ul> <!-- Danh sách nhịp tim -->  
+
+<div class="field" style="visibility: hidden;">
+    <label class="label">Nồng độ Oxy máu</label>
+    <div class="control">
+        <input
+            id="spo2RateInput" 
+            class="input"
+            type="text"
+            placeholder="Oxy máu"
+            name="SPO2"
+        />
+    </div>
+</div>
+<div id="averagespo2" style="visibility: hidden;"></div> <!-- Hiển thị giá trị trung bình -->  
+<ul id="spo2List" style="visibility: hidden;"></ul> <!-- Danh sách nhịp tim --> 
+
+<div class="field" style="visibility: hidden;">
+    <label class="label">Kết luận</label>
+    <div class="control">
+        <input
+            class="input"
+            type="text"
+            placeholder="Kết luận của bác sĩ"
+            name="Result"
+        />
+    </div>
+</div>
+
+
+		  <div class="field is-grouped">  
+        <div class="control1">  
+            <button class="button is-primary hidden" type="submit" id="submit-button">  
+                Submit  
+            </button>  
+        </div>  
+        &nbsp;&nbsp;  
+        <div class="control1">  
+            <button class="button is-danger hidden" type="button" onclick="getNewRecord()">Cancel</button>  
+        </div>  
+    </div>  
+    
+    <!-- CSS -->  
+    <style>  
+    .hidden {  
+        visibility: hidden; /* Ẩn nhưng vẫn giữ không gian */  
+    }  
+    </style>  
+		</form>
+
+		<div
+		  id="message"
+		  style="
+			display: none;
+			margin: 30px;
+			font-weight: bold;
+			color: black;
+			padding: 8px;
+			background-color: red;
+			border-radius: 4px;
+			border-color: aquamarine;
+		  "
+		></div>
+	</div>
+
+    <script>
+      function updateExaminationDate(){
+      // Lấy ngày hiện tại  
+      const today = new Date().toISOString().split('T')[0];  
+      // Cập nhật giá trị cho ô ngày khám  
+      document.getElementById('examination-day').value = today;  
+      }
+      // Gọi hàm khi trang được tải  
+      //window.onload = updateExaminationDate;  
+  
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("message").style.display = "block";
+        document.getElementById("submit-button").disabled = true;
+
+        // Lưu giá trị ngày khám  
+      const examinationDate = document.getElementById('examination-day').value; 
+         // Thu thập dữ liệu biểu mẫu  
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+
+        // Gửi yêu cầu POST tới Tập lệnh Google Apps 
+        fetch(
+          "https://script.google.com/macros/s/AKfycbwQ7kJ1HXlw9JwiBdMfi5cqfwv_mBfII6mj1HFG3UxKU4Ssy0lNCPTAKz2tZqnSevysQg/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Kiểm tra xem yêu cầu có thành công không
+            if (response) {
+              return response; // Giả sử tập lệnh của bạn trả về phản hồi JSON
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Hiển thị thông báo thành công
+            document.getElementById("message").textContent ="Data submitted successfully!";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.color = "beige";
+            document.getElementById("submit-button").disabled = false;
+            document.getElementById("form").reset();
+
+            // Cập nhật lại ô ngày khám với giá trị đã lưu  
+            document.getElementById('examination-day').value = examinationDate; 
+            setTimeout(function () {
+              document.getElementById("message").textContent = "";
+              document.getElementById("message").style.display = "none";
+            }, 2600);
+          })
+          .catch(function (error) {
+            // Xử lý lỗi, bạn có thể hiển thị thông báo lỗi tại đây
+            console.error(error);
+            document.getElementById("message").textContent =
+              "An error occurred while submitting the form.";
+            document.getElementById("message").style.display = "block";
+          });
+      });
+	  
+	    function getNewRecord(){
+		document.getElementById("form").reset();  
+		};
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+		<script src="control.js"></script>
+  </body>
+  <br> <br>
+</html>

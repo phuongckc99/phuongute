@@ -1,0 +1,374 @@
+.hero {
+    margin: 0 30%;
+} 
+.tentruong {  
+    background-color: #2c828d; /* Có thể thay đổi tùy ý */  
+}  
+
+.boder1 {  
+    flex: 20%;
+    margin: 10px; /* Khoảng cách bên ngoài */  
+    padding: 0; /* Xóa padding của boder1 nếu không cần thiết */  
+}  
+.boder10 {  
+    display: flex;  /* Sử dụng Flexbox cho bố cục */  
+    justify-content: space-between;  /* Chia đều khoảng cách giữa 2 phần */  
+    align-items: center;  /* Căn giữa theo chiều dọc */  
+    padding: 5px;  /* Padding cho toàn bộ phần */  
+}  
+
+.tendoan {  
+    text-align: center;  /* Căn giữa nội dung trong từng phần */  
+    height: 300px;  /* Chiều cao cho mỗi phần */  
+    width: 1000px;  /* Chiều rộng cho mỗi phần */  
+} 
+.hero-body {  
+    margin: 0; /* Đảm bảo không có margin xung quanh */  
+}
+.devices{
+    margin: 0 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+     /*xuống dòng khi nó đầy*/
+    /*flex-direction: column; hàng dọc*/  
+}
+
+.devices1{
+    margin: 0 20%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+     /*xuống dòng khi nó đầy*/
+    /*flex-direction: column; hàng dọc*/  
+}
+
+.dev1{
+    
+    border: 2px solid #4CAF50; /* Đường viền màu xanh */  
+    flex: 20%;
+    margin: 10px; /* Khoảng cách bên ngoài */  
+    border-radius: 10px; /* Bo góc */  
+
+}
+.dev2{
+    
+    border: 2px solid #4CAF50; /* Đường viền màu xanh */  
+    flex: 20%;
+    margin: 10px; /* Khoảng cách bên ngoài */  
+    border-radius: 10px; /* Bo góc */  
+}
+.ten{
+    font-weight: bold;
+    color: black;
+    margin: 0 30%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.ten1{
+    font-weight: bold;
+    color: black;
+    margin: 0 20%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.ten-temp{
+    background-color: rgb(244, 245, 239);
+    border: 2px solid #4CAF50; /* Đường viền màu xanh */  
+    flex: 20%;
+
+}
+.ten-nhiptim{
+    background-color: rgb(244, 245, 239);
+    border: 2px solid #4CAF50; /* Đường viền màu xanh */  
+    flex: 20%;  
+}
+.data-box1 {  
+    border: 2px solid #4CAF50; /* Đường viền màu xanh */  
+    padding: 20px; /* Khoảng cách bên trong */  
+    width: 200px; /* Độ rộng của ô */  
+    text-align: center; /* Canh giữa nội dung */  
+    margin: 20px auto; /* Đặt ô chính giữa */  
+    border-radius: 8px; /* Bo góc */  
+    background-color: #f2f6f8; /* Màu nền */  
+}  
+.data-box2 {  
+    border: 2px solid #4CAF50; /* Đường viền màu xanh */  
+    padding: 20px; /* Khoảng cách bên trong */  
+    width: 200px; /* Độ rộng của ô */  
+    text-align: center; /* Canh giữa nội dung */  
+    margin: 20px auto; /* Đặt ô chính giữa */  
+    border-radius: 8px; /* Bo góc */  
+    background-color: #f2f6f8; /* Màu nền */  
+} 
+.data-box3 {  
+    border: 2px solid #4CAF50; /* Đường viền màu xanh */  
+    padding: 20px; /* Khoảng cách bên trong */  
+    width: 200px; /* Độ rộng của ô */  
+    text-align: center; /* Canh giữa nội dung */  
+    margin: 20px auto; /* Đặt ô chính giữa */  
+    border-radius: 8px; /* Bo góc */  
+    background-color: #f2f6f8; /* Màu nền */  
+} 
+.field.is-grouped {  
+    justify-content: center; /* Căn giữa các nút nhấn gửi và hủy */  
+}
+.control1{
+   /* border: 2px solid black;  Đường viền màu xanh */ 
+    border-radius: 8px; /* Bo góc */  
+}
+.dev10{
+    width: 10%; /* Đặt chiều rộng của ảnh bằng 100% chiều rộng container */  
+    height: auto; /* Đảm bảo tỉ lệ ảnh không bị biến dạng */  
+}
+.devi{
+    margin: 0 15%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+     /*xuống dòng khi nó đầy*/
+    /*flex-direction: column; hàng dọc*/  
+      
+}
+.bogoc{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+     /*xuống dòng khi nó đầy*/
+    /*flex-direction: column; hàng dọc*/  
+    /*border: 2px solid #4CAF50; /* Đường viền màu xanh */  
+    border-radius: 10px; /* Bo góc */
+    
+}
+.bogoc1{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+     /*xuống dòng khi nó đầy*/
+    /*flex-direction: column; hàng dọc*/  
+    /*border: 2px solid #4CAF50;  Đường viền màu xanh */  
+    border-radius: 10px; /* Bo góc */
+}
+.image-container {  
+    width: 30px;  
+    height: 30px;  
+    margin: 10px; /* Khoảng cách giữa các div */  
+    display: flex; /* Sử dụng Flexbox cho các div con */  
+    justify-content: center; /* Căn giữa nội dung bên trong */  
+    align-items: center; /* Căn giữa nội dung bên trong */  
+}  
+.text1 {  
+    font-weight: bold;
+    font-size: 20px;
+    width: 478px;  
+    height: 30px;  
+    margin: 10px; /* Khoảng cách giữa các div */  
+    display: flex; /* Sử dụng Flexbox cho các div con */  
+    justify-content: center; /* Căn giữa nội dung bên trong */  
+    align-items: center; /* Căn giữa nội dung bên trong */  
+    background-color: #f01c1c; /* Màu nền cho các div */  
+    color: white; /* Màu chữ */  
+    border-radius: 5px; /* Bo góc div */   
+}   
+.text1.active {  
+    background-color: #3bf13b; /* Màu xanh (Green) */  
+} 
+.blinking-image {  
+    width: 100%; /* Đặt ảnh chiếm toàn bộ chiều rộng container */  
+    height: auto; /* Đảm bảo tỉ lệ ảnh không bị biến dạng */  
+    animation: blink 0.5s infinite; /* Thay đổi thời gian blink nếu cần */  
+}  
+
+@keyframes blink {  
+    0%, 100% {  
+        opacity: 1; /* Độ mờ 100% lúc bắt đầu và kết thúc */  
+    }  
+    50% {  
+        opacity: 0; /* Độ mờ 0% giữa thời gian */  
+    }  
+}
+.blinking {  
+    animation: blink 0.8s infinite;
+}  
+
+@keyframes blink-animation {  
+    from, to {  
+        opacity: 1;  
+    }  
+    50% {  
+        opacity: 0;  
+    }  
+} 
+.blinking-fast {  
+    animation: blink-fast 0.5s infinite;  
+}  
+
+@keyframes blink-fast {   
+    50% {  
+        background-color: lightgreen;  
+        opacity: 1;  
+    }  
+    100% {  
+        background-color: #f2f6f8; /* Màu nền mặc định */  
+        opacity: 1;  
+    }  
+}  
+.notification {  
+    display: none;  
+    color: white;  
+    padding: 20px 30px; /* Kích thước padding để thông báo lớn hơn */  
+    position: fixed;  
+    top: 20px; /* Đặt thông báo cách đỉnh trang 20px */  
+    left: 50%;  
+    transform: translateX(-50%); /* Căn giữa theo chiều ngang */  
+    z-index: 1000; /* Đảm bảo rằng thông báo nằm trên tất cả các phần khác */  
+    border-radius: 5px; /* Bo góc */  
+    text-align: center; /* Căn giữa nội dung bên trong */  
+    font-size: 20px; /* Kích thước chữ lớn hơn */  
+}  
+
+.notification.success {  
+    background-color: #4CAF50; /* Màu xanh cho thông báo thành công */  
+}  
+
+.notification.error {  
+    background-color: #f44336; /* Màu đỏ cho thông báo lỗi */  
+}
+
+
+/* Căn giữa theo chiều ngang cho thẻ devi */  
+
+
+.frame {  
+    width: 1000px;  
+    height: 750px;  
+    margin: 20px auto;  
+    border: 2px solid #CB0000;  
+    padding: 20px;  
+    border-radius: 8px;  
+    background-color: #222;  
+    color: white;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+}   
+.title {  
+    font-size: 3rem;  
+    font-weight: bold;  
+    color: white;  
+} 
+.content {  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    width: 100%;  
+    
+} 
+
+svg {  
+    display: block; /* Đảm bảo SVG nằm trên một dòng mới */  
+    margin: 0 20px; /* Khoảng cách giữa SVG và monitor */  
+}  
+.label1 {  
+    width: 80px;  
+    height: 80px; 
+    color: #f1b308;
+    font-size: 1.1rem;
+} 
+.label2 {  
+    width: 80px;  
+    height: 80px; 
+    color: #00FFFF;
+    font-size: 1.1rem;
+    
+} 
+.monitor {  
+    background: #333; /* Màu nền cho giao diện nhịp tim */  
+    border: 2px solid #f1b308;  
+    padding: 20px;  
+    border-radius: 10px;  
+    text-align: center;  
+}
+.monitor1 {  
+    
+    background: #333; /* Màu nền cho giao diện nhịp tim */  
+    border: 2px solid #00FFFF; 
+    padding: 20px;  
+    border-radius: 10px; 
+    text-align: center;  
+}
+@keyframes heartbeat {  
+    0% {  
+        transform: rotate(45deg) scale(1);  
+    }  
+    50% {  
+        transform: rotate(45deg) scale(1.2);  
+    }  
+    100% {  
+        transform: rotate(45deg) scale(1);  
+    }  
+}  
+.heart-rate {  
+    font-size: 1rem;  
+    font-weight: bold;  
+} 
+.heart-rate1 {  
+     /* Kích thước chữ cho nhịp tim */  
+    color: #32CD32; /* Màu nhịp tim */  
+}
+.container9 {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+  }  
+  
+  .heart {  
+    position: relative;  
+    width: 60px;  
+    height: 60px;  
+    background-color: #ff0000;  
+    transform: rotate(45deg);  
+    animation: heartbeat 1s infinite, up-down 2s infinite;  
+    margin-right: 2rem;  
+  }  
+  
+  .heart:before, .heart:after {  
+    content: "";  
+    position: absolute;  
+    width: 60px;  
+    height: 60px;  
+    background-color: #ff0000;  
+    border-radius: 50%;  
+  }  
+  
+  .heart:before {  
+    top: -30px;  
+    left: 0;  
+  }  
+  
+  .heart:after {  
+    top: 0;  
+    left: -30px;  
+  }  
+  
+  .heart-rate {  
+    font-size: 2rem;  
+    font-weight: bold;  
+  }   
+  canvas {
+    width: 800px;  
+    height: 200px;  
+    border: 2px solid #00FFFF;
+    border-radius: 10px; /* Bo góc */  
+    margin-top: 10px;
+}
+/* Bố cục Flexbox */
+.devi456 {  
+    text-align: center; /* Căn giữa các phần tử bên trong */  
+    margin: 0 auto; /* Tự động điều chỉnh margin bên trái và phải */  
+    
+}  
